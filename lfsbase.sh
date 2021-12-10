@@ -26,11 +26,11 @@ sudo mount -v -t ext4 /dev/nbd0p1 $LFS #Mounts root partition on /mnt/lfs. CHANG
 
 sudo mkdir $LFS/home #It creates a directory /mnt/lfs/home. Once creatred you can remove this line. 
 
-sudo mount -v -t ext4 /dev/nbd0p2 /mnt/lfs/home #Mounts boot partition on /mnt/lfs/home. CHANGE 'NBD' accordingly.
+sudo mount -v -t ext4 /dev/nbd0p2 /mnt/lfs/home #Mounts home partition on /mnt/lfs/home. CHANGE 'NBD' accordingly.
 
 sudo mkdir $LFS/boot #It creates a directory /mnt/lfs/boot. Once creatred you can remove this line
 
-sudo mount -v -t ext2 /dev/nbd0p4 $LFS/boot  #Mounts root partition on /mnt/lfs/boot. CHANGE 'NBD' accordingly.
+sudo mount -v -t ext2 /dev/nbd0p4 $LFS/boot  #Mounts boot partition on /mnt/lfs/boot. CHANGE 'NBD' accordingly.
 
 sudo /sbin/swapon -v /dev/nbd0p3 #It activates swap partition
 
