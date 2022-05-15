@@ -16,7 +16,7 @@ sudo qemu-nbd -c /dev/nbd0 /media/kant/local/Linux/hdd.vhdx #This loads your VHD
 
 echo waiting for nbd block to load properly ... #Just to facilate sleep
 
-sleep 1s #This prevent the execution of furthur commands, so that nbd block can load properly.
+sleep 5s #This prevent the execution of furthur commands, so that nbd block can load properly.
 
 echo block loaded properly, executing...
 
